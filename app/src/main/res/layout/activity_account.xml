@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#697565"
+    tools:context=".AccountActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            android:text="MY CONTENT" />
+
+        <Button
+            android:id="@+id/btnGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Games"
+            android:drawableLeft="@drawable/gamei"
+            />
+
+        <Button
+            android:id="@+id/btnFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Friends"
+            android:drawableLeft="@drawable/friendsi"
+            />
+
+        <Button
+            android:id="@+id/btnGroups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Groups"
+            android:drawableLeft="@drawable/groupsi"/>
+
+        <Button
+            android:id="@+id/btnMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Screenshots/Videos"
+            android:drawableLeft="@drawable/multimedi"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <Button
+            android:id="@+id/btnAccountDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:background="@android:color/transparent"
+            android:text="Account Details"
+            />
+
+        <Button
+            android:id="@+id/btnChangeAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:background="@android:color/transparent"
+            android:text="Change Account" />
+
+        <Button
+            android:id="@+id/btnSingOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:background="@android:color/transparent"
+            android:text="Sing Out" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="155dp"
+        android:layout_height="166dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/avatar" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="251dp"
+        android:layout_height="166dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/txtNameAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="80px"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Name Account" />
+
+        <Button
+            android:id="@+id/btnViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="View Profile" />
+
+        <Button
+            android:id="@+id/btnAddFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Friend"
+            android:textAlignment="textStart"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:drawableLeft="@drawable/addfriendi"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

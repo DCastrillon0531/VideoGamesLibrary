@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#697565"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtMenu"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:paddingStart="20dp"
+            android:text="MENU"
+            android:textAlignment="center"
+            android:textSize="90px"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/iVAccount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Account"
+            app:srcCompat="@drawable/avatar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+
+        <Button
+            android:id="@+id/btnStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Store"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/storeicon"
+            />
+
+        <Button
+            android:id="@+id/btnNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="News"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/newsicon"
+            />
+
+        <Button
+            android:id="@+id/btnNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Notifications"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/alarmaicon"
+            />
+
+        <Button
+            android:id="@+id/btnLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Library"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/libraryicon"
+            />
+
+
+        <Button
+            android:id="@+id/btnCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Community"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/groupsi"
+            />
+
+        <Button
+            android:id="@+id/btnChatSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Chat Support"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/supporticon"
+            />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Settings"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/settingsicon"
+            />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Support"
+            android:textAlignment="viewStart"
+            android:textSize="45px"
+            android:drawableLeft="@drawable/alerticon"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginBottom="16dp"
+        android:background="#697565"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/iBNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+            android:contentDescription="Notify"
+            app:srcCompat="@drawable/notifyicon" />
+
+        <ImageView
+            android:id="@+id/iBHome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:contentDescription="Home"
+            app:srcCompat="@drawable/homeicon" />
+
+        <ImageView
+            android:id="@+id/iBMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="50dp"
+            android:contentDescription="Menu"
+            app:srcCompat="@drawable/menuicon" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
